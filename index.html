@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Utsav ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #fff8f5;
+  color: #5b3b3b;
+  overflow: hidden;
+}
+
+.page {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  overflow: hidden;
+}
+
+.page.active {
+  display: flex;
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.content {
+  max-width: 700px;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+h1 {
+  font-family: 'Caveat', cursive;
+  font-size: clamp(48px, 9vw, 90px);
+  line-height: 1;
+  color: #8b4b4b;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: 'Caveat', cursive;
+  font-size: clamp(38px, 7vw, 65px);
+  color: #8b4b4b;
+  margin-bottom: 18px;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #765858;
+}
+
+.small {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #a77a7a;
+  margin-bottom: 15px;
+}
+
+.tiny {
+  font-size: 14px;
+  color: #a77a7a;
+  margin-bottom: 15px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* ---------------- ENVELOPE ---------------- */
+
+#page1 {
+  background: #fff8f5;
+}
+
+.envelope-wrapper {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.envelope {
+  width: 270px;
+  height: 180px;
+  background: #e9b9b5;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 15px 35px rgba(100, 50, 50, 0.15);
+  transition: 0.5s;
+}
+
+.envelope:hover {
+  transform: translateY(-8px) rotate(-1deg);
+}
+
+.envelope::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 135px solid transparent;
+  border-right: 135px solid transparent;
+  border-top: 95px solid #d99f9b;
+  z-index: 3;
+}
+
+.envelope::after {
+  content: "❤️";
+  position: absolute;
+  font-size: 38px;
+  left: 50%;
+  top: 72px;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+
+.envelope-text {
+  margin-top: 25px;
+  font-family: 'Caveat', cursive;
+  font-size: 27px;
+  color: #8b4b4b;
+}
+
+/* ---------------- BOYFRIEND DAY ---------------- */
+
+#page2 {
+  background: linear-gradient(135deg, #fff7f4, #ffe9e5);
+}
+
+.love-gif {
+  font-size: 85px;
+  animation: heartBeat 1.2s infinite;
+  margin: 20px 0;
+}
+
+@keyframes heartBeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+.ghost {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.tap {
+  margin-top: 30px;
+  padding: 13px 25px;
+  border-radius: 30px;
+  background: #8b4b4b;
+  color: white;
+  transition: 0.3s;
+}
+
+.tap:hover {
+  transform: translateY(-3px);
+}
+
+/* ---------------- OCTOBER ---------------- */
+
+#page3 {
+  background:
+    radial-gradient(circle at 15% 20%, #f3c6a5 0 5px, transparent 6px),
+    radial-gradient(circle at 80% 15%, #e6a28c 0 5px, transparent 6px),
+    linear-gradient(135deg, #fff2e5, #f9d7c1);
+}
+
+.october {
+  font-size: clamp(75px, 15vw, 150px);
+  font-family: 'Caveat', cursive;
+  color: #9a5747;
+}
+
+/* ---------------- FALL ---------------- */
+
+#page4 {
+  background: linear-gradient(#fff7ee, #f7dfcc);
+}
+
+.fall-text {
+  font-family: 'Caveat', cursive;
+  font-size: clamp(48px, 9vw, 90px);
+  color: #995445;
+}
+
+.leaves {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.leaf {
+  position: absolute;
+  top: -50px;
+  font-size: 28px;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  from {
+    transform: translateY(-50px) rotate(0deg);
+  }
+
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+/* ---------------- AWARD ---------------- */
+
+#page5 {
+  background: #fff9f2;
+}
+
+.award {
+  width: min(500px, 90%);
+  padding: 40px 25px;
+  border: 2px solid #e8c2a9;
+  border-radius: 25px;
+  background: rgba(255,255,255,0.75);
+  box-shadow: 0 20px 50px rgba(100,50,30,0.08);
+}
+
+.trophy {
+  font-size: 75px;
+  margin-bottom: 15px;
+}
+
+.award-title {
+  font-family: 'Caveat', cursive;
+  font-size: 55px;
+  color: #a65d45;
+}
+
+.award-name {
+  font-size: 23px;
+  margin-top: 15px;
+}
+
+/* ---------------- FIVE THINGS ---------------- */
+
+#page6 {
+  background: #fff8f5;
+}
+
+.things {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.thing {
+  padding: 18px 10px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(100,50,50,0.07);
+  transition: 0.3s;
+}
+
+.thing:hover {
+  transform: translateY(-6px);
+}
+
+.thing span {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.thing p {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+@media (max-width: 650px) {
+  .things {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------------- QUESTION ---------------- */
+
+#page7 {
+  background: linear-gradient(135deg, #fff8f5, #fce5e1);
+}
+
+.question-box {
+  max-width: 600px;
+}
+
+.question-mark {
+  font-size: 65px;
+  margin-bottom: 15px;
+}
+
+/* ---------------- QUIET MOMENT ---------------- */
+
+#page8 {
+  background: #f8eee9;
+}
+
+.quiet {
+  max-width: 550px;
+}
+
+.quiet-heart {
+  font-size: 55px;
+  margin-bottom: 25px;
+}
+
+.quiet p {
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+/* ---------------- LETTER ---------------- */
+
+#page9 {
+  background: #fffaf7;
+  overflow-y: auto;
+}
+
+.letter {
+  max-width: 650px;
+  padding: 35px;
+  text-align: left;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 45px rgba(80,40,30,0.08);
+}
+
+.letter h2 {
+  text-align: center;
+}
+
+.letter p {
+  font-family: 'Caveat', cursive;
+  font-size: 22px;
+  line-height: 1.55;
+  margin-bottom: 15px;
+}
+
+.signature {
+  text-align: right;
+  font-family: 'Caveat', cursive;
+  font-size: 27px;
+  color: #8b4b4b;
+  margin-top: 20px;
+}
+
+/* ---------------- CHOOSE ME ---------------- */
+
+#page10 {
+  background: linear-gradient(135deg, #fff7f4, #ffe8e3);
+}
+
+.choice-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.choice-buttons button {
+  padding: 14px 25px;
+  border-radius: 30px;
+  background: white;
+  color: #8b4b4b;
+  font-size: 15px;
+  box-shadow: 0 8px 25px rgba(100,50,50,0.1);
+  transition: 0.3s;
+}
+
+.choice-buttons button:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(100,50,50,0.15);
+}
+
+#choiceAnswer {
+  margin-top: 25px;
+  font-family: 'Caveat', cursive;
+  font-size: 28px;
+  color: #9a5747;
+}
+
+/* ---------------- FINAL ---------------- */
+
+#page11 {
+  background: linear-gradient(135deg, #fff1e8, #f6d6c7);
+}
+
+.final-heart {
+  font-size: 75px;
+  animation: heartBeat 1.2s infinite;
+  margin-bottom: 15px;
+}
+
+.final-title {
+  font-family: 'Caveat', cursive;
+  font-size: clamp(48px, 9vw, 85px);
+  color: #8b4b4b;
+}
+
+.final-subtitle {
+  font-family: 'Caveat', cursive;
+  font-size: clamp(30px, 6vw, 55px);
+  color: #995445;
+  margin: 15px 0;
+}
+
+.final-october {
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  color: #8b6860;
+}
+
+.confetti {
+  position: fixed;
+  top: -30px;
+  pointer-events: none;
+  animation: confettiFall linear forwards;
+  z-index: 20;
+}
+
+@keyframes confettiFall {
+  from {
+    transform: translateY(-30px) rotate(0deg);
+  }
+
+  to {
+    transform: translateY(110vh) rotate(720deg);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 : ENVELOPE -->
+
+<section class="page active" id="page1">
+
+  <div class="envelope-wrapper" onclick="openEnvelope()">
+
+    <div class="envelope"></div>
+
+    <div class="envelope-text">
+      Open me, boo 💌
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PAGE 2 : BOYFRIEND'S DAY -->
+
+<section class="page" id="page2">
+
+  <div class="content">
+
+    <div class="ghost">👻</div>
+
+    <div class="small">
+      Hi boo
+    </div>
+
+    <h1>
+      Happy Boyfriend's<br>
+      Dayyyy! ❤️
+    </h1>
+
+    <div class="love-gif">
+      ❤️
+    </div>
+
+    <p>
+      I made a tiny little corner of the internet<br>
+      just for you.
+    </p>
+
+    <button class="tap" onclick="nextPage()">
+      Come closer →
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- PAGE 3 : OCTOBER -->
+
+<section class="page" id="page3">
+
+  <div class="content">
+
+    <div class="small">
+      Wait...
+    </div>
+
+    <div class="october">
+      October 🍂
+    </div>
+
+    <h2>
+      is our month,<br>
+      isn't it?
+    </h2>
+
+    <p>
+      The month that somehow became<br>
+      a little more special because of us.
+    </p>
+
+    <button class="tap" onclick="nextPage()">
+      Keep going →
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- PAGE 4 : FALL IN LOVE -->
+
+<section class="page" id="page4">
+
+  <div class="leaves"></div>
+
+  <div class="content">
+
+    <div class="small">
+      Every October
+    </div>
+
+    <div class="fall-text">
+      And again...
+    </div>
+
+    <h1>
+      we fall in love<br>
+      in October. 🍂
+    </h1>
+
+    <p>
+      Maybe that's why I love this month<br>
+      a little more than I should.
+    </p>
+
+    <button class="tap" onclick="nextPage()">
+      One more thing →
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- PAGE 5 : BEST BOYFRIEND AWARD -->
+
+<section class="page" id="page5">
+
+  <div class="award">
+
+    <div class="trophy">
+      🏆
+    </div>
+
+    <div class="small">
+      Officially presented to
+    </div>
+
+    <div class="award-title">
+      Best Boyfriend
+    </div>
+
+    <div class="award-name">
+      Utsav ❤️
+    </div>
+
+    <p style="margin-top:20px;">
+      For being my favourite person,<br>
+      my comfort, my chaos,<br>
+      and somehow still putting up with me.
+    </p>
+
+    <button class="tap" onclick="nextPage()">
+      Continue →
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- PAGE 6 : FIVE LITTLE THINGS -->
+
+<section class="page" id="page6">
+
+  <div class="content">
+
+    <div class="small">
+      Five little things
+    </div>
+
+    <h2>
+      I love about you ❤️
+    </h2>
+
+    <div class="things">
+
+      <div class="thing">
+        <span>🫶</span>
+        <p>Your kindness</p>
+      </div>
+
+      <div class="thing">
+        <span>😂</span>
+        <p>Your silly side</p>
+      </div>
+
+      <div class="thing">
+        <span>🤍</span>
+        <p>Your comfort</p>
+      </div>
+
+      <div class="thing">
+        <span>🌷</span>
+        <p>The way you care</p>
+      </div>
+
+      <div class="thing">
+        <span>🏡</span>
+        <p>Being my person</p>
+      </div>
+
+    </div>
+
+    <button class="tap" onclick="nextPage()">
+      There's more →
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- PAGE 7 : CUTE QUESTION -->
+
+<section class="page" id="page7">
+
+  <div class="question-box">
+
+    <div class="question-mark">
+      🥺
+    </div>
+
+    <div class="small">
+      Important question
+    </div>
+
+    <h1>
+      Do you know...
+    </h1>
+
+    <p>
+      that you're still my favourite notification,<br>
+      favourite person to annoy,<br>
+      and favourite human to do absolutely nothing with?
+    </p>
+
+    <button class="tap" onclick="nextPage()">
+      I hope so ❤️
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- PAGE 8 : QUIET MOMENT -->
+
+<section class="page" id="page8">
+
+  <div class="quiet">
+
+    <div class="quiet-heart">
+      🤍
+    </div>
+
+    <div class="small">
+      Just us
+    </div>
+
+    <p>
+      No big promises.<br>
+      No perfect moments.<br><br>
+
+      Just you and me,<br>
+      choosing each other<br>
+      through all the little days.
+    </p>
+
+    <button class="tap" onclick="nextPage()">
+      Read this →
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- PAGE 9 : LETTER -->
+
+<section class="page" id="page9">
+
+  <div class="letter">
+
+    <h2>
+      Dear Utsav,
+    </h2>
+
+    <p>
+      If I could go back to the beginning of our story,
+      I think I'd still choose you — in every version of it.
+    </p>
+
+    <p>
+      Thank you for being there through the ordinary days,
+      the difficult ones, the silly ones, and all the little
+      moments in between. Thank you for being my person,
+      my comfort, and my favourite human.
+    </p>
+
+    <p>
+      Five years feels like such a big number, but somehow
+      I still feel like there is so much more left for us to
+      experience, laugh about, learn, and dream about together.
+    </p>
+
+    <p>
+      I hope we keep growing together. I hope we keep finding
+      reasons to laugh at the most random things, keep annoying
+      each other, keep making ordinary days feel special, and
+      keep choosing each other through every version of life.
+    </p>
+
+    <p>
+      If I had to choose again, I wouldn't hesitate.
+    </p>
+
+    <p>
+      It would still be you.
+    </p>
+
+    <p>
+      Happy 5th Anniversary, my favourite human. ❤️
+    </p>
+
+    <p>
+      And here's to all the little moments and big dreams
+      still waiting for us.
+    </p>
+
+    <div class="signature">
+      Always,<br>
+      Gauri ❤️
+    </div>
+
+    <div style="text-align:center;">
+      <button class="tap" onclick="nextPage()">
+        One last question...
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PAGE 10 : CHOOSE ME -->
+
+<section class="page" id="page10">
+
+  <div class="content">
+
+    <div class="tiny">
+      One last little question...
+    </div>
+
+    <h1>
+      Will you keep<br>
+      choosing me? ❤️
+    </h1>
+
+    <p>
+      Even through all the ordinary days,<br>
+      silly moments, and everything life brings?
+    </p>
+
+    <div class="choice-buttons">
+
+      <button onclick="chooseMe()">
+        Yes ❤️
+      </button>
+
+      <button onclick="chooseMe()">
+        Of course, pumpkin 🎃❤️
+      </button>
+
+    </div>
+
+    <div id="choiceAnswer"></div>
+
+  </div>
+
+</section>
+
+
+<!-- PAGE 11 : FINAL -->
+
+<section class="page" id="page11">
+
+  <div class="content">
+
+    <div class="final-heart">
+      ❤️
+    </div>
+
+    <div class="final-title">
+      Happy Boyfriend's Day! 🎈
+    </div>
+
+    <div class="final-subtitle">
+      ❤️ Happy 5th Anniversary, Utsav ❤️
+    </div>
+
+    <div class="final-october">
+      Here's to another October. 🍂
+    </div>
+
+  </div>
+
+</section>
+
+
+<script>
+
+let currentPage = 1;
+
+
+/* ---------------- PAGE NAVIGATION ---------------- */
+
+function nextPage() {
+
+  const current = document.getElementById("page" + currentPage);
+
+  current.classList.remove("active");
+
+  currentPage++;
+
+  const next = document.getElementById("page" + currentPage);
+
+  if (next) {
+    next.classList.add("active");
+  }
+
+  if (currentPage === 2) {
+    createHearts();
+  }
+
+  if (currentPage === 3 || currentPage === 4) {
+    createLeaves();
+  }
+}
+
+
+/* ---------------- OPEN ENVELOPE ---------------- */
+
+function openEnvelope() {
+
+  const envelope = document.querySelector(".envelope");
+
+  envelope.style.transform = "translateY(-15px) rotate(-2deg)";
+
+  setTimeout(() => {
+
+    document.getElementById("page1").classList.remove("active");
+
+    currentPage = 2;
+
+    document.getElementById("page2").classList.add("active");
+
+    createHearts();
+
+  }, 1000);
+}
+
+
+/* ---------------- HEARTS ---------------- */
+
+function createHearts() {
+
+  const container = document.getElementById("page2");
+
+  for (let i = 0; i < 18; i++) {
+
+    const heart = document.createElement("div");
+
+    heart.innerHTML = "❤️";
+
+    heart.style.position = "absolute";
+    heart.style.fontSize = (12 + Math.random() * 20) + "px";
+    heart.style.left = Math.random() * 100 + "%";
+    heart.style.bottom = "-30px";
+    heart.style.opacity = "0.6";
+    heart.style.pointerEvents = "none";
+
+    const duration = 4 + Math.random() * 5;
+
+    heart.style.animation =
+      `floatHeart ${duration}s linear forwards`;
+
+    container.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, duration * 1000);
+  }
+}
+
+
+/* ---------------- LEAVES ---------------- */
+
+function createLeaves() {
+
+  const containers = document.querySelectorAll(".leaves");
+
+  containers.forEach(container => {
+
+    if (container.children.length > 0) return;
+
+    const leafTypes = ["🍂", "🍁", "🍃"];
+
+    for (let i = 0; i < 25; i++) {
+
+      const leaf = document.createElement("div");
+
+      leaf.className = "leaf";
+
+      leaf.innerHTML =
+        leafTypes[Math.floor(Math.random() * leafTypes.length)];
+
+      leaf.style.left = Math.random() * 100 + "%";
+
+      leaf.style.fontSize =
+        (18 + Math.random() * 18) + "px";
+
+      const duration =
+        5 + Math.random() * 7;
+
+      leaf.style.animationDuration =
+        duration + "s";
+
+      leaf.style.animationDelay =
+        Math.random() * 5 + "s";
+
+      container.appendChild(leaf);
+
+    }
+
+  });
+
+}
+
+
+/* ---------------- CHOOSE ME ---------------- */
+
+function chooseMe() {
+
+  const answer = document.getElementById("choiceAnswer");
+
+  answer.innerHTML = "I knew it. 🎃❤️";
+
+  setTimeout(() => {
+
+    document.getElementById("page10").classList.remove("active");
+
+    currentPage = 11;
+
+    document.getElementById("page11").classList.add("active");
+
+    createConfetti();
+
+  }, 1800);
+
+}
+
+
+/* ---------------- CONFETTI ---------------- */
+
+function createConfetti() {
+
+  const symbols = [
+    "❤️",
+    "🎈",
+    "✨",
+    "🍂",
+    "🍁",
+    "🤍",
+    "🎃"
+  ];
+
+  for (let i = 0; i < 60; i++) {
+
+    const piece = document.createElement("div");
+
+    piece.className = "confetti";
+
+    piece.innerHTML =
+      symbols[Math.floor(Math.random() * symbols.length)];
+
+    piece.style.left =
+      Math.random() * 100 + "%";
+
+    piece.style.fontSize =
+      (14 + Math.random() * 20) + "px";
+
+    const duration =
+      3 + Math.random() * 5;
+
+    piece.style.animationDuration =
+      duration + "s";
+
+    piece.style.animationDelay =
+      Math.random() * 2 + "s";
+
+    document.body.appendChild(piece);
+
+    setTimeout(() => {
+      piece.remove();
+    }, (duration + 2) * 1000);
+
+  }
+
+}
+
+</script>
+
+
+<style>
+
+/* HEART FLOAT ANIMATION */
+
+@keyframes floatHeart {
+
+  from {
+    transform: translateY(0) scale(0.8);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0.6;
+  }
+
+  to {
+    transform: translateY(-110vh) scale(1.2);
+    opacity: 0;
+  }
+
+}
+
+</style>
+
+</body>
+</html>
